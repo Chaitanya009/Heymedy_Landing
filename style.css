@@ -57,8 +57,8 @@
 }
 .heading{
   font-weight: bold;
-  font-size: 1.4em;
-  color: #00BFA5;
+  font-size: 1em;
+  color: #26A69A;
   padding-left: 10%;
 }
 .detail{
@@ -72,4 +72,34 @@
     height: auto;
     padding-top: 10%;
     padding-bottom: 10%;
+}
+#img4 {
+    max-width: 60%;
+    height: auto;
+}
+.seconds {
+  background-color: #76c5c8;
+  height: 2px;
+  width: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.bar {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#87d4d7), color-stop(100%,#8bfbff));
+  height: 2px;
+  width: 0%;
+}
+
+.animating {
+  -webkit-animation: progress 5s infinite linear;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
